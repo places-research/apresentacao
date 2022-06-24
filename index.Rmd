@@ -1,0 +1,182 @@
+---
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["slides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: "https://platform.twitter.com/widgets.js"
+      slideNumberFormat: |
+         <div class="progress-bar-container">
+           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+           </div>
+         </div>
+    seal: false 
+---
+
+
+```{r child = "setup.Rmd"}
+```
+
+```{r xaringan-logo, echo=FALSE}
+#xaringanExtra::use_logo(image_url = "img/Image2.png")
+```
+
+```{r echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+
+class: middle
+
+.larger[
+.center[
+Planejando Acessibilidade e Mobilidade nas Pequenas/Médias Cidades Brasileiras
+]]
+
+<br></br>
+
+.large[
+.purple[
+Renata Oliveira e Lílian Bracarense
+]]
+
+.big[
+.purple[
+Seminários 2022 - 11/07/2022
+]]
+
+---
+class: inverse
+
+# Agenda
+
+--
+
+.large[
+Cidades de pequeno e médio portes
+]
+
+--
+.large[
+Proposta de planejamento orientado à acessibilidade - Paraíso do Tocantins
+]
+
+--
+.large[
+Questões de pesquisa
+]
+
+---
+
+# Cidades de pequeno porte
+
+.panelset.sideways[
+
+.pre[
+
+.panel[.panel-name[.bigger[
+Organização institucional]]
+.bigger[
+- escassez de dados
+- legislação urbanística negligenciada/ com falhas
+- escassez de qualificação técnica
+- dificuldade de organização para captação de recursos
+]]
+
+.panel[.panel-name[.bigger[
+Mobilidade Urbana]]
+.bigger[
+- transporte público precário ou inexistente
+- relevância do transporte a pé
+- potencial para transporte cicloviário 
+- crescimento acelerado de motocicletas
+- saturação de tráfego ainda não é um gargalo (situações pontuais)
+]]
+
+.panel[.panel-name[Planejamento]
+.bigger[
+- modelo tradicional baseado em demanda x oferta é oneroso, demanda recursos que as cidades não têm
+- conhecer o carregamento da rede é, em muitos casos, secundário ou desnecessário
+- análise de acessibilidade permite:
+- subsidiar instrumentos urbanísticos (planos diretores, lei de uso e ocupação do solo - análise mais completa do que apenas hierarquia viária e largura)
+- estabelecer prioridades de investimentos
+- direcionar vetores de expansão urbana
+]]]
+]
+---
+
+# Cidades de médio porte
+
+.panelset.sideways[
+
+.panel[.panel-name[Organização institucional]
+- existe um nível de organização e bases de dados
+- legislação urbanística existente
+- alguma qualificação técnica
+- organização para captação de recursos
+]
+
+.panel[.panel-name[Mobilidade Urbana]
+- transporte público existente, alguma dificuldade de obtenção de dados
+- características urbanísticas variáveis (caso a caso)
+- potencial para transporte cicloviário 
+- crescimento acelerado de motocicletas
+- saturação de tráfego pode ainda não ser um gargalo (situações pontuais)
+
+]
+
+.panel[.panel-name[Planejamento]
+- cidades em expansão (polos regionais)
+- modelo tradicional baseado em demanda x oferta é oneroso, dados de origem - destino indisponíveis
+conhecer o carregamento da rede em alguns casos pode fornecer informações observáveis por meios menos onerosos (a depender de cada cidade)
+- análise de acessibilidade permite:
+        - subsidiar instrumentos urbanísticos (planos diretores, lei de uso e ocupação do solo - análise mais completa do que apenas hierarquia viária e largura)
+        - estabelecer prioridades de investimentos
+        - direcionar vetores de expansão urbana
+
+]]
+
+---
+# Proposta de planejamento orientado à acessibilidade - Paraíso do Tocantins
+
+---
+# Questões de pesquisa
+
+---
+
+.pull-right[
+.larger[
+.center[
+THANK YOU!
+]]
+]
+
+<hr />
+
+&nbsp;
+
+<p style="text-align: center;"><span style="color: #ebdb00;"><em>renataoliveira@gmail.com</em></span></p>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+<!-- Add font awesome icons -->
+<p style="text-align: center;">
+    <a href="https://twitter.com/retaoliveira?lang=en" class="fa fa-twitter fa-2x"></a>&nbsp;&nbsp;
+    <a href="https://github.com/retaoliveira" class="fa fa-github fa-2x"></a>&nbsp;&nbsp;
+    <a href="https://scholar.google.com/citations?user=V6EX45EAAAAJ" class="ai ai-google-scholar ai-2x"></a>&nbsp;&nbsp;
+    <a href="https://orcid.org/0000-0002-9011-2342" class="ai ai-orcid ai-2x"></a>&nbsp;&nbsp;
+    <a href="http://lattes.cnpq.br/2642488704355833" class="ai ai-lattes ai-2x"></a>&nbsp;&nbsp;
+    <a href="https://github.com/retaoliveira/relements/raw/main/texto/index.pdf" class="ai ai-cv ai-2x"></a>
+
+</p>
+
+&nbsp;
+
