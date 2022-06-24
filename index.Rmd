@@ -109,7 +109,7 @@ Mobilidade Urbana]]
 ]
 ---
 
-# Cidades de médio porte
+## Cidades de médio porte
 
 .panelset.sideways[
 
@@ -133,20 +133,27 @@ Mobilidade Urbana]]
 .panel[.panel-name[Planejamento]
 .bigger[
 - cidades em expansão (polos regionais)
-- modelo tradicional baseado em demanda x oferta é oneroso, dados de origem - destino indisponíveis
-conhecer o carregamento da rede em alguns casos pode fornecer informações observáveis por meios menos onerosos (a depender de cada cidade)
-- análise de acessibilidade permite:
-        - subsidiar instrumentos urbanísticos (planos diretores, lei de uso e ocupação do solo - análise mais completa do que apenas hierarquia viária e largura)
-        - estabelecer prioridades de investimentos
-        - direcionar vetores de expansão urbana
+- modelo tradicional baseado em demanda x oferta 
+- análise de acessibilidade
+    - subsidiar instrumentos urbanísticos (planos diretores, lei de uso e ocupação do solo - análise mais completa do que apenas hierarquia viária e largura)
+    - estabelecer prioridades de investimentos
+    - direcionar vetores de expansão urbana
 
 ]]]
 
+???
+
+modelo tradicional baseado em demanda x oferta é oneroso, dados de origem - destino indisponíveis
+conhecer o carregamento da rede em alguns casos pode fornecer informações observáveis por meios menos onerosos (a depender de cada cidade)
 ---
-# Proposta de planejamento orientado à acessibilidade - Paraíso do Tocantins
+
+## Proposta de planejamento orientado à acessibilidade - Paraíso do Tocantins
+
+
+
 
 ---
-# Questões de pesquisa
+## Questões de pesquisa
 
 ---
 

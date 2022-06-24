@@ -13,6 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@300&family=Noto+Sans:wght@200&family=Nunito&family=Shadows+Into+Light&family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans&family=Staatliches&family=Zen+Loop&display=swap');
 
 /* Turn off slide numbers */
 /* Don't want them on videos! */
@@ -41,7 +42,7 @@
   --text-font-is-google: 1;
   --text-font-family-fallback: 'Nunito', sans-serif;
   --text-font-base: 'Nunito', sans-serif;
-  --header-font-family: 'Shadows Into Light', cursive;
+  --header-font-family: 'Oswald', sans-serif;
   --header-font-is-google: 1;
   --code-font-family: 'Noto Sans', sans-serif;
   --code-font-is-google: 1;
@@ -112,7 +113,8 @@
 /* Title slide customization */
 .title-slide h1, h2, h3 {
   text-align: left;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Oswald', sans-serif;
+
   color: var(--header-color);
   font-size: 130%;
 }
