@@ -52,7 +52,7 @@ Seminários 2022 - 11/07/2022
 ---
 class: inverse
 
-# Agenda
+## Agenda
 
 --
 
@@ -72,7 +72,7 @@ Questões de pesquisa
 
 ---
 
-# Cidades de pequeno porte
+## Cidades de pequeno porte
 
 .panelset.sideways[
 
@@ -114,22 +114,24 @@ Mobilidade Urbana]]
 .panelset.sideways[
 
 .panel[.panel-name[Organização institucional]
+.bigger[
 - existe um nível de organização e bases de dados
 - legislação urbanística existente
 - alguma qualificação técnica
 - organização para captação de recursos
-]
+]]
 
 .panel[.panel-name[Mobilidade Urbana]
+.bigger[
 - transporte público existente, alguma dificuldade de obtenção de dados
 - características urbanísticas variáveis (caso a caso)
 - potencial para transporte cicloviário 
 - crescimento acelerado de motocicletas
 - saturação de tráfego pode ainda não ser um gargalo (situações pontuais)
-
-]
+]]
 
 .panel[.panel-name[Planejamento]
+.bigger[
 - cidades em expansão (polos regionais)
 - modelo tradicional baseado em demanda x oferta é oneroso, dados de origem - destino indisponíveis
 conhecer o carregamento da rede em alguns casos pode fornecer informações observáveis por meios menos onerosos (a depender de cada cidade)
@@ -138,7 +140,7 @@ conhecer o carregamento da rede em alguns casos pode fornecer informações obse
         - estabelecer prioridades de investimentos
         - direcionar vetores de expansão urbana
 
-]]
+]]]
 
 ---
 # Proposta de planejamento orientado à acessibilidade - Paraíso do Tocantins
