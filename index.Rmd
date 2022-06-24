@@ -76,7 +76,6 @@ Questões de pesquisa
 
 .panelset.sideways[
 
-.pre[
 
 .panel[.panel-name[.bigger[
 Organização institucional]]
@@ -106,7 +105,8 @@ Mobilidade Urbana]]
 - estabelecer prioridades de investimentos
 - direcionar vetores de expansão urbana
 ]]]
-]
+
+
 ---
 
 ## Cidades de médio porte
