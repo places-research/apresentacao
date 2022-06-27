@@ -147,13 +147,40 @@ modelo tradicional baseado em demanda x oferta é oneroso, dados de origem - des
 conhecer o carregamento da rede em alguns casos pode fornecer informações observáveis por meios menos onerosos (a depender de cada cidade)
 ---
 
-## Proposta de planejamento orientado à acessibilidade - Paraíso do Tocantins
+## Proposta de planejamento orientado à acessibilidade Paraíso do Tocantins
+.center[
+Paraíso do Tocantins
+]
 
+- Quem é paraíso?
+- pandemia
 
+1.1.	Características de demanda
+1.2.	Características de oferta
+1.3.	Percepção da população
 
 
 ---
+
+```{r}
+knitr::include_graphics()
+```
+
+## Medidas de acessibilidade urbana
+
+necessidade de definir indicadores que possibilitem caracterizar as cidades quanto ao acesso às funções essenciais de forma objetiva e avaliar alternativas tendo como objetivo central a promoção de melhores condições de acesso. Essa mensuração é necessária para integração das diretrizes e políticas públicas e para tomada de decisão assertiva quanto à reconfiguração estrutural das cidades.
+
+---
 ## Questões de pesquisa
+1. Quais os indicadores mais adequados para mensuração da acessibilidade a cidades de menor porte? É válido utilizar diferentes indicadores conforme o nível da função? 
+2. Justifica-se a utilização de tempos no deslocamento motorizado ou a distância seria um indicador adequado, visto que os níveis de congestionamento não são tão relevantes para cidades de menor porte?
+3. As avaliações dos projetos, quanto ao acesso a oportunidades em cidades de menor porte, podem ser realizadas utilizando os mesmos métodos de avaliação ex-ante propostos para capitais metropolitanas?
+4. O potencial de intervenção por diretrizes de uso do solo e transportes orientadas à acessibilidade é maior para cidades de menor porte? Como promover diretrizes nos planos diretor e de mobilidade para que a desigualdade socioespacial seja evitada e não corrigida? 
+5. De que maneira análises de acessibilidade podem ser incluídas em revisões de leis de Parcelamento, Uso e Ocupação do Solo?
+6. Qual nível de detalhamento de dados para análises de acessibilidade é suficiente para aplicações que visem dar embasamento à elaboração de instrumentos urbanísticos?
+7. A qualidade da infraestrutura afeta a acessibilidade, na percepção do usuário? Quais os reflexos dessa percepção para o uso do espaço urbano, nas diferentes modalidades, sobretudo no transporte ativo? Como incluir elementos de infraestrutura na análise de acessibilidade para o transporte a pé?
+
+
 
 ---
 
