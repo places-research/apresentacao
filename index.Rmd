@@ -26,11 +26,11 @@ output:
 ```
 
 ```{r echo=FALSE}
-xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(
+  active_foreground = "#4c3a78",
+  hover_foreground = "#2c8475",
+)
 ```
-
-
-class: middle
 
 .larger[
 .center[
@@ -74,8 +74,11 @@ Questões de pesquisa
 
 ## Cidades de pequeno porte
 
-.panelset.sideways[
+ .big[
+**População menor do que 100.000 habitantes**
+]
 
+.panelset.sideways[
 
 .panel[.panel-name[.bigger[
 Organização institucional]]
@@ -98,18 +101,22 @@ Mobilidade Urbana]]
 
 .panel[.panel-name[Planejamento]
 .bigger[
-- modelo tradicional baseado em demanda x oferta é oneroso, demanda recursos que as cidades não têm
-- conhecer o carregamento da rede é, em muitos casos, secundário ou desnecessário
+- modelo tradicional baseado em demanda x oferta - recursos que as cidades não têm
+- conhecer o carregamento da rede pode ser secundário ou desnecessário
 - análise de acessibilidade permite:
-- subsidiar instrumentos urbanísticos (planos diretores, lei de uso e ocupação do solo - análise mais completa do que apenas hierarquia viária e largura)
-- estabelecer prioridades de investimentos
-- direcionar vetores de expansão urbana
+  - subsidiar instrumentos urbanísticos
+  - estabelecer prioridades de investimentos
+  - direcionar vetores de expansão urbana
 ]]]
 
 
 ---
 
 ## Cidades de médio porte
+
+ .big[
+**População entre 100.000 e 500.000 habitantes**
+]
 
 .panelset.sideways[
 
@@ -148,12 +155,36 @@ conhecer o carregamento da rede em alguns casos pode fornecer informações obse
 ---
 
 ## Proposta de planejamento orientado à acessibilidade Paraíso do Tocantins
-.center[
-Paraíso do Tocantins
+
+.pull-left[
+.big[
+- População estimada: 52.521 pessoas (2021)
+- IDHM: 0,764 (2010)
+- Salário médio mensal dos trabalhadores formais: 1,8 salários mínimos (2020)
+- População ocupada: 20,8% (2020)
+- Percentual das receitas oriundas de fontes externas: 75,5 %  (2015)
+- Urbanização de vias públicas: 3,4 %  (2010)
 ]
 
-- Quem é paraíso?
-- pandemia
+IBGE Cidades
+]
+
+.pull-right[
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="43%"}
+knitr::include_graphics("img/pt.png")
+```
+]
+
+
+
+---
+
+## 
+
+
+
+---
+
 
 1.1.	Características de demanda
 1.2.	Características de oferta
@@ -162,7 +193,7 @@ Paraíso do Tocantins
 
 ---
 
-```{r}
+```{r eval=FALSE, message=TRUE, warning=TRUE, include=FALSE}
 knitr::include_graphics()
 ```
 
