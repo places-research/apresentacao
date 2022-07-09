@@ -422,7 +422,38 @@ Para o **transporte individual motorizado**, considerou-se apenas o tempo de des
 **Categorização** de cada indicador em **classes** 
 ]
 
+.pull-left[
 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ftExtra)
+library(flextable)
+library(gtsummary)
+
+library(readxl)
+classes <- read_excel("classes.xlsx")
+
+grouped_df5 <- classes %>%
+   dplyr::group_by(`Abrangência`, `Indicador`) 
+
+#funcoes %>% ftExtra::as_flextable(col_keys = names(grouped_iris), groups_to = "merged")
+
+#as_flextable(as_grouped_data(funcoes, "Função", columns = NULL))
+
+
+ft5 <- ftExtra::as_flextable(grouped_df5, col_keys = names(grouped_df5), groups_to = "merged")
+
+ft5 <- set_table_properties(ft5, layout = "autofit", width = 1)
+
+
+ft5
+]
+```
+
+.pull-right[
+
+
+]
 
 ---
 
