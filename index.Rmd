@@ -733,7 +733,7 @@ Existem **diferenças** de **potencial de intervenção** por diretrizes de uso 
 ---
 
 .pull-right[
-.large[
+.huge[
 .center[
 OBRIGADA!
 ]]
@@ -741,16 +741,11 @@ OBRIGADA!
 
 <hr />
 
-&nbsp;
+.grande[
+.center[
+renataoliveira@gmail.com
 
-<p style="text-align: center;"><span style="color: #2c8475;"><em>renataoliveira@gmail.com</em></span></p>
+lilianfontes@mail.uft.edu.br
+]]
 
-
-<p style="text-align: center;"><span style="color: #2c8475;"><em>lilianfontes@mail.uft.edu.br</em></span></p>
-
-    
-<!-- Add font awesome icons -->
-
-
-&nbsp;
 
