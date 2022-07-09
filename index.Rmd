@@ -338,25 +338,28 @@ library(ftExtra)
 library(flextable)
 library(gtsummary)
 
-funcoes$Função <- as.factor(funcoes$Função)
+crit <- crit[2:7,]
 
-grouped_df1 <- funcoes %>%
-   dplyr::group_by(`Função`) %>% 
-   select(-`Abrangência`) %>% 
-   filter( `Função` == "Comércio e serviços (gerais)" | `Função` == "Comércio e serviços (especializados)" | `Função` == "Postos de trabalho")
+crit[,1] <- "Arterial" 
+
+crit[1,4] <- NA 
+crit[2,4] <- NA
+   
+grouped_df4 <- crit %>%
+   dplyr::group_by(Hierarquia, `Faixa dupla?`) 
 
 #funcoes %>% ftExtra::as_flextable(col_keys = names(grouped_iris), groups_to = "merged")
 
 #as_flextable(as_grouped_data(funcoes, "Função", columns = NULL))
 
 
-ft3 <- ftExtra::as_flextable(grouped_df1, col_keys = names(grouped_df1), groups_to = "merged")
+ft4 <- ftExtra::as_flextable(grouped_df4, col_keys = names(grouped_df4), groups_to = "merged")
 
 
-ft3 <- set_table_properties(ft1, layout = "autofit", width = 1)
+ft4 <- set_table_properties(ft4, layout = "autofit", width = 1)
 
 
-ft3
+ft4
 
 ```
 ]
