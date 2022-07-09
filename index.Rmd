@@ -569,7 +569,7 @@ knitr::include_graphics("img/tp.png")
 **Definição de fases sequenciais de intervenções propostas para cada modo considerando renda, densidade populacional e a acessibilidade** 
 ]
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
 knitr::include_graphics("img/tp_invest.png")
 ```
 
@@ -595,7 +595,7 @@ Mensuração (1/3)
 Mensuração (2/3)
 ]]
 
-.big[
+.bigger[
 **Qual** **nível de detalhamento** (resolução) de **dados** para análises de acessibilidade é suficiente para aplicações que visem dar embasamento à **elaboração de instrumentos urbanísticos**? **Quais ganhos o nível de detalhamento** traz para a **tomada de decisão** em relação aos **instrumentos urbanísticos** (LUOS, Plano Diretor, Plano de Mobilidade)? **Cidades de menor porte** são **mais sensíveis** à **unidade de área** considerada?
 ]
 
@@ -608,7 +608,7 @@ Mensuração (2/3)
 Mensuração (3/3)
 ]]
 
-.big[
+.bigger[
 Justifica-se a utilização de **tempos no deslocamento motorizado** ou a **distância** seria um indicador adequado, visto que os **níveis de congestionamento** não são tão relevantes para **cidades de menor porte**? Uma **pesquisa de velocidade** nas vias (amostral) seria um caminho adequado para **determinação de tempos nos links** para cidades de menor porte?
 ]
 
@@ -621,7 +621,7 @@ Justifica-se a utilização de **tempos no deslocamento motorizado** ou a **dist
 Escala (1/3)
 ]]
 
-.big[
+.bigger[
 Como se dá a **participação de cada urbe** dentro de uma **rede de atividades regional**? É relevante caminharmos para a **exploração de escalas intraurbana e interurbana – interligadas por transporte público**? Há impactos em relação à **identificação de iniquidades no acesso a oportunidades**? 
 ]
 
@@ -634,7 +634,7 @@ Como se dá a **participação de cada urbe** dentro de uma **rede de atividades
 Escala (2/3)
 ]]
 
-.big[
+.bigger[
 As **divisões administrativas municipais** poderiam ser **desconsideradas** ou seria relevante, como alternativa, considerarmos funções de pertinência para as **transições municipais**?
 ]
 
@@ -647,7 +647,7 @@ As **divisões administrativas municipais** poderiam ser **desconsideradas** ou 
 Escala (3/3)
 ]]
 
-.big[
+.bigger[
 Existem **diferenças** entre fenômenos em **escala municipal, metropolitana e nas redes urbanas regionais**?
 ]
 
@@ -660,7 +660,7 @@ Existem **diferenças** entre fenômenos em **escala municipal, metropolitana e 
 Diagnóstico (1/3)
 ]]
 
-.big[
+.bigger[
 A **qualidade da infraestrutura** afeta a **acessibilidade**, na **percepção do usuário**? Quais os **reflexos dessa percepção** para o **uso do espaço urbano**, nas diferentes modalidades, sobretudo no **transporte ativo**? **Como** incluir **elementos de infraestrutura** na **análise de acessibilidade** para o **transporte a pé**?
 ]
 
@@ -673,7 +673,7 @@ A **qualidade da infraestrutura** afeta a **acessibilidade**, na **percepção d
 Diagnóstico (2/3)
 ]]
 
-.big[
+.bigger[
 Em **cidades de menor porte**, existe a **desigualdade socioespacial** da acessibilidade? Existe o fenômeno da **segregação voluntária**? É possível **caracterizar o spatial mismatch** considerando que a **rede de transporte público** atende a população de **baixa renda** e os cidadãos de **alta renda** se deslocam por **modos individuais**? Quais seriam os **fundamentos** para a análise dos problemas de acessibilidade? 
 ]
 
@@ -687,7 +687,7 @@ Em **cidades de menor porte**, existe a **desigualdade socioespacial** da acessi
 Diagnóstico (3/3)
 ]]
 
-.big[
+.bigger[
 Considerando que um cenário comum em cidades de menor porte é a **inexistência de transporte público formal**, **como** se conformam as **desigualdades socioespaciais**? Quais **indicadores de acessibilidade** seriam mais adequados para **mensurar problemas** e **desigualdade** na acessibilidade nesse contexto? 
 ]
 ---
@@ -699,7 +699,7 @@ Considerando que um cenário comum em cidades de menor porte é a **inexistênci
 Instrumentos urbanísticos e avaliação (1/3)
 ]]
 
-.big[
+.bigger[
 As **avaliações** dos projetos quanto ao acesso a oportunidades em **cidades de menor porte** podem ser realizadas utilizando os mesmos métodos de **avaliação ex-ante** propostos para capitais **metropolitanas**? Métodos de **inferência causal** podem auxiliar no **entendimento** (diagnóstico) da **desigualdade socioespacial** para municípios de menor porte? Como fazer **avaliações ex-ante de intervenções** para evitar que essas desigualdades se instalem? 
 ]
 
@@ -712,7 +712,7 @@ As **avaliações** dos projetos quanto ao acesso a oportunidades em **cidades d
 Instrumentos urbanísticos e avaliação (2/3)
 ]]
 
-.big[
+.bigger[
 De que maneira análises de acessibilidade podem ser **incluídas em revisões de leis de Parcelamento, Uso e Ocupação do Solo**? Como promover **diretrizes nos planos diretor e de mobilidade** para que a **desigualdade socioespacial** seja **evitada** e não corrigida? 
 ]
 
@@ -726,14 +726,14 @@ De que maneira análises de acessibilidade podem ser **incluídas em revisões d
 Instrumentos urbanísticos e avaliação (3/3)
 ]]
 
-.big[
+.bigger[
 Existem **diferenças** de **potencial de intervenção** por diretrizes de uso do solo e transportes orientadas à acessibilidade entre **cidades maiores e menores**? **Como** essas diferenças podem ser trabalhadas em cada contexto?
 ]
 
 ---
 
 .pull-right[
-.larger[
+.large[
 .center[
 OBRIGADA!
 ]]
@@ -744,36 +744,13 @@ OBRIGADA!
 &nbsp;
 
 <p style="text-align: center;"><span style="color: #2c8475;"><em>renataoliveira@gmail.com</em></span></p>
-<!-- Add font awesome icons -->
-<p style="text-align: center;">
-    <a href="https://twitter.com/retaoliveira?lang=en" class="fa fa-twitter fa-2x"></a>&nbsp;&nbsp;
-    <a href="https://github.com/retaoliveira" class="fa fa-github fa-2x"></a>&nbsp;&nbsp;
-    <a href="https://scholar.google.com/citations?user=V6EX45EAAAAJ" class="ai ai-google-scholar ai-2x"></a>&nbsp;&nbsp;
-    <a href="https://orcid.org/0000-0002-9011-2342" class="ai ai-orcid ai-2x"></a>&nbsp;&nbsp;
-    <a href="http://lattes.cnpq.br/2642488704355833" class="ai ai-lattes ai-2x"></a>&nbsp;&nbsp;
-    <a href="https://github.com/retaoliveira/relements/raw/main/texto/index.pdf" class="ai ai-cv ai-2x"></a>
+
 
 <p style="text-align: center;"><span style="color: #2c8475;"><em>lilianfontes@mail.uft.edu.br</em></span></p>
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-
-
     
 <!-- Add font awesome icons -->
-<p style="text-align: center;">
-    <a href="https://twitter.com/retaoliveira?lang=en" class="fa fa-twitter fa-2x"></a>&nbsp;&nbsp;
-    <a href="https://github.com/retaoliveira" class="fa fa-github fa-2x"></a>&nbsp;&nbsp;
-    <a href="https://scholar.google.com/citations?user=V6EX45EAAAAJ" class="ai ai-google-scholar ai-2x"></a>&nbsp;&nbsp;
-    <a href="https://orcid.org/0000-0002-9011-2342" class="ai ai-orcid ai-2x"></a>&nbsp;&nbsp;
-    <a href="http://lattes.cnpq.br/2642488704355833" class="ai ai-lattes ai-2x"></a>&nbsp;&nbsp;
-    <a href="https://github.com/retaoliveira/relements/raw/main/texto/index.pdf" class="ai ai-cv ai-2x"></a>
 
-
-</p>
 
 &nbsp;
 
