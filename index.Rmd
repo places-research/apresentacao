@@ -562,16 +562,12 @@ knitr::include_graphics("img/tp.png")
 ```
 
 ---
+
 ## Proposta de planejamento orientado à acessibilidade
 
 .large[
 **Definição de fases sequenciais de intervenções propostas para cada modo considerando renda, densidade populacional e a acessibilidade** 
 ]
-
-
-.bigger[.bold[
-Transporte coletivo por ônibus
-]]
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("img/tp_invest.png")
