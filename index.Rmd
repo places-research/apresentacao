@@ -46,6 +46,11 @@ funcoes <- funcoes %>%
 
 imped_active <- read_excel("imped_active.xlsx")
 
+crit <- read_excel("criticidade.xlsx") 
+
+crit <- criticidade %>% 
+  filter("Faixa dupla?"== NA)
+
 ```
 
 .huge[
