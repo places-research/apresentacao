@@ -114,7 +114,8 @@
 .title-slide h1, h2, h3 {
   text-align: left;
   font-family: 'Oswald', sans-serif;
-
+  margin-top: 1em;
+  margin-bottom: 0em;
   color: var(--header-color);
   font-size: 130%;
 }
@@ -188,13 +189,21 @@ h3 {
 
 .remark-slide-content h1 {
   font-size: var(--header-h1-font-size);
+  margin-top: 0.3em;
+  margin-bottom: 0em;
 }
 .remark-slide-content h2 {
   font-size: var(--header-h2-font-size);
+  margin-top: 0.3em;
+  margin-bottom: 0em;
+
 }
 .remark-slide-content h3 {
   font-size: var(--header-h3-font-size);
   line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+
 
 }
 .remark-code, .remark-inline-code {
@@ -248,6 +257,9 @@ a, a > code {
 
 .huge {font-size: 350%;
        font-weight: bold;
+       font-family: 'Oswald', Sans-Serif;
+       color: var(--header-color);
+
 }
 
 .larger {font-size: 300%;
@@ -256,9 +268,12 @@ a, a > code {
          color: var(--header-color);
 }
 
-.large { font-size: 200% }
-.bigger { font-size: 150% }
-.big { font-size: 115% }
+.large { font-size: 200%;
+         margin-top: 0em;}
+.bigger { font-size: 150%;
+         margin-top: 0em;}
+.big { font-size: 115%;
+       margin-top: 0em;}
 .midi { font-size: 85% }
 .small { font-size: 70% }
 .xsmall { font-size: 65% }
@@ -297,6 +312,7 @@ a, a > code {
 .pull-left {
   width: 50%;
   float: left;
+  margin-top: 0em;
 }
 
 .pull-right {

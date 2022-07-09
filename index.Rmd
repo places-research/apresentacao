@@ -32,7 +32,18 @@ xaringanExtra::style_panelset_tabs(
 )
 ```
 
-.larger[
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+funcoes <- read_delim("funcoes.csv", delim = ";", 
+    escape_double = FALSE, trim_ws = TRUE)
+
+funcoes <- funcoes %>% 
+  dplyr::select(-"...1")
+
+```
+
+.huge[
 .center[
 Planejando Acessibilidade e Mobilidade nas Pequenas/Médias Cidades Brasileiras
 ]]
@@ -74,7 +85,7 @@ Questões de pesquisa
 
 ## Cidades de pequeno porte
 
- .big[
+.bigger[
 **População menor do que 100.000 habitantes**
 ]
 
@@ -114,7 +125,7 @@ Mobilidade Urbana]]
 
 ## Cidades de médio porte
 
- .big[
+.bigger[
 **População entre 100.000 e 500.000 habitantes**
 ]
 
@@ -154,7 +165,11 @@ modelo tradicional baseado em demanda x oferta é oneroso, dados de origem - des
 conhecer o carregamento da rede em alguns casos pode fornecer informações observáveis por meios menos onerosos (a depender de cada cidade)
 ---
 
-## Proposta de planejamento orientado à acessibilidade - Paraíso do Tocantins
+## Proposta de planejamento orientado à acessibilidade
+
+.large[
+**Paraíso do Tocantins**
+]
 
 .pull-left[
 .big[
@@ -170,24 +185,76 @@ IBGE Cidades
 ]
 
 .pull-right[
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="43%"}
-knitr::include_graphics("img/pt.png")
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
+knitr::include_graphics("img/pt1.png")
+```
+]
+
+---
+
+## Proposta de planejamento orientado à acessibilidade
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+library(kableExtra)
+library(tidyverse)
+funcoes %>% 
+  kbl(align = "c") %>%
+      kable(booktabs = TRUE) %>% 
+      pack_rows(index = c("Saúde" = 2, "Educação" = 3, "Lazer e esportes", = 2,  "Comércio e serviços (gerais)" = 1, "Comércio e serviços (especializados)" = 1, "Postos de trabalho" = 1))
+```
+
+.pull-left[
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ftExtra)
+library(flextable)
+library(gtsummary)
+
+funcoes$Função <- as.factor(funcoes$Função)
+
+grouped_df <- funcoes %>%
+   dplyr::group_by(`Função`) %>% 
+   select(-`Abrangência`) %>% 
+   filter(`Função` == "Saúde" | `Função` == "Educação")
+
+ft <- ftExtra::as_flextable(grouped_df, col_keys = names(grouped_df), groups_to = "merged")
+ft
+
+
+```
+]
+
+.pull-right[
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ftExtra)
+library(flextable)
+library(gtsummary)
+
+funcoes$Função <- as.factor(funcoes$Função)
+
+grouped_df1 <- funcoes %>%
+   dplyr::group_by(`Função`) %>% 
+   select(-`Abrangência`) %>% 
+   filter(`Função` == "Lazer e esportes" | `Função` == "Comércio e serviços (gerais)" | `Função` == "Comércio e serviços (especializados)" | `Função` == "Postos de trabalho")
+
+#funcoes %>% ftExtra::as_flextable(col_keys = names(grouped_iris), groups_to = "merged")
+
+#as_flextable(as_grouped_data(funcoes, "Função", columns = NULL))
+
+
+ft1 <- ftExtra::as_flextable(grouped_df1, col_keys = names(grouped_df1), groups_to = "merged")
+ft1
+
+
 ```
 ]
 
 
-
----
-
-## Proposta de planejamento orientado à acessibilidade
+???
 
 .bigger[
-**Decisões metodológicas sobre acessibilidade**
-]
-
-.pull-left
-.bigger[
-Uso de indicadores de acessibilidade distintos para diferentes funções, considerando a ordem da função.
+Uso de **indicadores de acessibilidade distintos** para **diferentes funções** conforme sua ordem.
 ]
 
 
@@ -200,7 +267,6 @@ Uso de indicadores de acessibilidade distintos para diferentes funções, consid
 ]
 
 .bigger[
-
 Unidade de análise para diferenciação espacial 
 ]
 
@@ -249,8 +315,10 @@ Inexistência de dados acessíveis de tempos nos links para transporte individua
 ]
 
 .bigger[
-Categorização de cada indicador em classes para análise posterior das regiões mais vulneráveis em relação à acessibilidade
+**Categorização** de cada indicador em **classes** para análise posterior das regiões mais vulneráveis em relação à acessibilidade
 ]
+
+
 
 ---
 
@@ -424,7 +492,7 @@ Existem **diferenças** de **potencial de intervenção** por diretrizes de uso 
 .pull-right[
 .larger[
 .center[
-THANK YOU!
+OBRIGADA!
 ]]
 ]
 
@@ -432,7 +500,9 @@ THANK YOU!
 
 &nbsp;
 
-<p style="text-align: center;"><span style="color: #ebdb00;"><em>renataoliveira@gmail.com</em></span></p>
+<p style="text-align: center;"><span style="color: #2c8475;"><em>renataoliveira@gmail.com</em></span></p>
+
+<p style="text-align: center;"><span style="color: #2c8475;"><em>lilianfontes@mail.uft.edu.br</em></span></p>
 
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
