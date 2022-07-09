@@ -434,7 +434,9 @@ library(readxl)
 classes <- read_excel("classes.xlsx")
 
 grouped_df5 <- classes %>%
-   dplyr::group_by(`Abrangência`, `Indicador`) 
+   dplyr::group_by(`Abrangência`,`Indicador`) %>%
+   select(`Indicador`, `Abrangência`, Classes)%>%
+   filter(Indicador == "Tempo mínimo"| Indicador == "Cumulativo")
 
 #funcoes %>% ftExtra::as_flextable(col_keys = names(grouped_iris), groups_to = "merged")
 
@@ -447,12 +449,83 @@ ft5 <- set_table_properties(ft5, layout = "autofit", width = 1)
 
 
 ft5
+
+```
 ]
+.pull-right[
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ftExtra)
+library(flextable)
+library(gtsummary)
+
+library(readxl)
+classes <- read_excel("classes.xlsx")
+
+grouped_df6 <- classes %>%
+   dplyr::group_by(`Abrangência`,`Indicador`) %>%
+   select(`Indicador`, `Abrangência`, Classes)%>%
+   filter(Indicador == "Potencial")
+
+#funcoes %>% ftExtra::as_flextable(col_keys = names(grouped_iris), groups_to = "merged")
+
+#as_flextable(as_grouped_data(funcoes, "Função", columns = NULL))
+
+
+ft6 <- ftExtra::as_flextable(grouped_df6, col_keys = names(grouped_df6), groups_to = "merged")
+
+ft6 <- set_table_properties(ft6, layout = "autofit", width = 1)
+
+
+ft6
+
 ```
 
+]
+
+---
+
+## Proposta de planejamento orientado à acessibilidade
+
+.large[
+**Categorização** de cada indicador em **classes** 
+]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("img/acesso1.png")
+```
+
+---
+
+## Proposta de planejamento orientado à acessibilidade
+
+.large[
+**Categorização** de cada indicador em **classes** 
+]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("img/acesso2.png")
+```
+
+
+---
+
+## Proposta de planejamento orientado à acessibilidade
+
+.large[
+**Definição de fases sequenciais de intervenções propostas para cada modo considerando renda, densidade populacional e a acessibilidade** 
+]
+
+.pull-left[
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
+knitr::include_graphics("img/objetivo.png")
+```
+]
+
 .pull-right[
-
-
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
+knitr::include_graphics("img/acao.png")
+```
 ]
 
 ---
@@ -462,6 +535,47 @@ ft5
 .large[
 **Definição de fases sequenciais de intervenções propostas para cada modo considerando renda, densidade populacional e a acessibilidade** 
 ]
+
+.bigger[.bold[
+Pedestres
+]]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("img/ped.png")
+```
+
+---
+
+## Proposta de planejamento orientado à acessibilidade
+
+.large[
+**Definição de fases sequenciais de intervenções propostas para cada modo considerando renda, densidade populacional e a acessibilidade** 
+]
+
+
+.bigger[.bold[
+Transporte coletivo por ônibus
+]]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("img/tp.png")
+```
+
+---
+## Proposta de planejamento orientado à acessibilidade
+
+.large[
+**Definição de fases sequenciais de intervenções propostas para cada modo considerando renda, densidade populacional e a acessibilidade** 
+]
+
+
+.bigger[.bold[
+Transporte coletivo por ônibus
+]]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("img/tp_invest.png")
+```
 
 ---
 
