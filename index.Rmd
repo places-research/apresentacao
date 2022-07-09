@@ -85,7 +85,7 @@ Questões de pesquisa
 
 ## Cidades de pequeno porte
 
-.bigger[
+.large[
 **População menor do que 100.000 habitantes**
 ]
 
@@ -125,7 +125,7 @@ Mobilidade Urbana]]
 
 ## Cidades de médio porte
 
-.bigger[
+.large[
 **População entre 100.000 e 500.000 habitantes**
 ]
 
@@ -194,6 +194,10 @@ knitr::include_graphics("img/pt1.png")
 
 ## Proposta de planejamento orientado à acessibilidade
 
+.bigger[
+**Decisões metodológicas sobre acessibilidade**
+]
+
 ```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 library(kableExtra)
 library(tidyverse)
@@ -215,9 +219,12 @@ funcoes$Função <- as.factor(funcoes$Função)
 grouped_df <- funcoes %>%
    dplyr::group_by(`Função`) %>% 
    select(-`Abrangência`) %>% 
-   filter(`Função` == "Saúde" | `Função` == "Educação")
+   filter(`Função` == "Saúde" | `Função` == "Educação"| `Função` == "Lazer e esportes" )
 
 ft <- ftExtra::as_flextable(grouped_df, col_keys = names(grouped_df), groups_to = "merged")
+
+ft <- set_table_properties(ft, layout = "autofit")
+
 ft
 
 
@@ -236,7 +243,7 @@ funcoes$Função <- as.factor(funcoes$Função)
 grouped_df1 <- funcoes %>%
    dplyr::group_by(`Função`) %>% 
    select(-`Abrangência`) %>% 
-   filter(`Função` == "Lazer e esportes" | `Função` == "Comércio e serviços (gerais)" | `Função` == "Comércio e serviços (especializados)" | `Função` == "Postos de trabalho")
+   filter( `Função` == "Comércio e serviços (gerais)" | `Função` == "Comércio e serviços (especializados)" | `Função` == "Postos de trabalho")
 
 #funcoes %>% ftExtra::as_flextable(col_keys = names(grouped_iris), groups_to = "merged")
 
@@ -244,6 +251,11 @@ grouped_df1 <- funcoes %>%
 
 
 ft1 <- ftExtra::as_flextable(grouped_df1, col_keys = names(grouped_df1), groups_to = "merged")
+
+
+ft1 <- set_table_properties(ft1, layout = "autofit")
+
+
 ft1
 
 
@@ -262,13 +274,18 @@ Uso de **indicadores de acessibilidade distintos** para **diferentes funções**
 
 ## Proposta de planejamento orientado à acessibilidade
 
-.bigger[
+.large[
 **Decisões metodológicas sobre acessibilidade**
 ]
 
 .bigger[
 Unidade de análise para diferenciação espacial 
 ]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("img/unit.png")
+```
+
 
 ---
 

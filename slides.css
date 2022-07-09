@@ -225,6 +225,7 @@ strong { color: var(--text-bold-color); }
 a, a > code {
   color: var(--link-color);
   text-decoration: none;
+  margin-bottom: 0em;
 }
 
 .remark-code-line-highlighted {
@@ -233,6 +234,7 @@ a, a > code {
 .inverse {
   background-color: var(--inverse-background-color);
   color: var(--inverse-text-color);
+  margin-bottom: 0em;
   
 }
 .inverse h1, .inverse h2, .inverse h3 {
@@ -266,10 +268,14 @@ a, a > code {
          font-weight: bold;
          font-family: 'Oswald', Sans-Serif;
          color: var(--header-color);
+         margin-bottom: 0em;
+
 }
 
 .large { font-size: 200%;
-         margin-top: 0em;}
+         margin-top: 0em;
+         margin-bottom: 0em;
+}
 .bigger { font-size: 150%;
          margin-top: 0em;}
 .big { font-size: 115%;
