@@ -32,7 +32,6 @@ xaringanExtra::style_panelset_tabs(
 )
 ```
 
-
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 library(tidyverse)
 library(readxl)
@@ -301,35 +300,33 @@ knitr::include_graphics("img/unit.png")
 ]
 
 .pull-left[
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(ftExtra)
 library(flextable)
 
-imped_active <- imped_active %>% 
-  mutate(modo = factor(Modo)
 
-imped_active$"Velocidade padrão (km/h)"  <- as.factor(funcoes$"Velocidade padrão (km/h)")
+#imped_active$Velocidade padrão (km/h)  <- as.factor(funcoes$Velocidade padrão (km/h))
 
-
-
-grouped_df1 <- funcoes %>%
-   dplyr::group_by(`Função`) %>% 
-   select(-`Abrangência`) %>% 
-   filter( `Função` == "Comércio e serviços (gerais)" | `Função` == "Comércio e serviços (especializados)" | `Função` == "Postos de trabalho")
-
+names(imped_active) <- c("Modo", "Velocidade (km/h)", "Inclinação", "Fator de impedância", "a", "b") 
+   
+grouped_df3 <- imped_active %>%
+   dplyr::group_by(Modo, `Velocidade (km/h)`) %>% 
+   select(-c(a, b)) %>%
+   filter(`Inclinação` != "Inclinação")
+          
 #funcoes %>% ftExtra::as_flextable(col_keys = names(grouped_iris), groups_to = "merged")
 
 #as_flextable(as_grouped_data(funcoes, "Função", columns = NULL))
 
 
-ft2 <- ftExtra::as_flextable(grouped_df1, col_keys = names(grouped_df1), groups_to = "merged")
+ft3 <- ftExtra::as_flextable(grouped_df3, col_keys = names(grouped_df3), groups_to = "merged")
 
 
-ft2 <- set_table_properties(ft1, layout = "autofit", width = 1)
+ft3 <- set_table_properties(ft3, layout = "autofit", width = 1)
 
 
-ft2
+ft3
 
 ```
 ]
