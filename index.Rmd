@@ -32,6 +32,10 @@ xaringanExtra::style_panelset_tabs(
 )
 ```
 
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 library(tidyverse)
 library(readxl)
@@ -69,21 +73,19 @@ Seminários 2022 - 11/07/2022
 ---
 class: inverse
 
-## Agenda
+# Agenda
 
 --
-
-.large[
+.larger[
 Cidades de pequeno e médio portes
 ]
-
 --
-.large[
+.larger[
 Proposta de planejamento orientado à acessibilidade - Paraíso do Tocantins
 ]
 
 --
-.large[
+.larger[
 Questões de pesquisa
 ]
 
@@ -178,7 +180,7 @@ conhecer o carregamento da rede em alguns casos pode fornecer informações obse
 ]
 
 .pull-left[
-.bigger[
+.big[
 - População estimada: 52.521 pessoas (2021)
 - IDHM: 0,764 (2010)
 - Salário médio mensal dos trabalhadores formais: 1,8 salários mínimos (2020)
@@ -187,8 +189,9 @@ conhecer o carregamento da rede em alguns casos pode fornecer informações obse
 - Urbanização de vias públicas: 3,4 %  (2010)
 ]
 
+.footnote[
 IBGE Cidades
-]
+]]
 
 .pull-right[
 ```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
@@ -264,12 +267,8 @@ ft1 <- set_table_properties(ft1, layout = "autofit", width = 1)
 
 ft1
 
-
-
-
 ```
 ]
-
 
 ???
 
@@ -296,7 +295,7 @@ knitr::include_graphics("img/unit.png")
 ## Proposta de planejamento orientado à acessibilidade
 
 .large[
-**Impedância e criticidade nas redes de modos ativos e tempos de deslocamento**
+**Impedância e criticidade nas redes de modos ativos**
 ]
 
 .pull-left[
@@ -323,7 +322,7 @@ grouped_df3 <- imped_active %>%
 ft3 <- ftExtra::as_flextable(grouped_df3, col_keys = names(grouped_df3), groups_to = "merged")
 
 
-ft3 <- set_table_properties(ft3, layout = "autofit", width = 1)
+ft3 <- set_table_properties(ft3,  width = 1, layout = "autofit")
 
 
 ft3
@@ -373,6 +372,35 @@ ft4
 **Impedância na rede de transporte público coletivo e tempos de deslocamento**
 ]
 
+.bigger[
+**Tempos** de transporte por **ônibus**
+]
+
+.big[
+- rede multimodal composta por:    
+      (i) deslocamento entre o ponto de origem por modo a pé até o ponto de embarque mais próximo;    
+      (ii) tempo de espera estimado a partir do quadro horário;   
+      (iii) tempo de deslocamento embarcado, considerando a velocidade média da linha circular que conecta os bairros Vila Regina e Jardim Paulista; e    
+      (iv) tempo de deslocamento a pé até o ponto de destino após desembarque 
+       
+- As características para composição do tempo de deslocamento do pedestre foram mantidas conforme descrição na seção anterior.
+]
+
+.footnote[
+Cui et al. (2020); Ermagun and Tilahun (2020); Hernandez et al. (2020); Zuo et al. (2020).
+]
+
+???
+
+Quanto aos tempos de espera e deslocamento embarcado, foram assumidas premissas específicas. Inicialmente, as linhas que compõe o sistema foram classificadas em dois grupos: (i) linhas circulares; e (ii) linhas de conexão com o IFTO. Assim, para as linhas de conexão com o IFTO, não se consideraram impedâncias adicionais por tempo de espera, visto que o quadro horário visa atender, sem viagens não orientadas a esse objetivo, os horários de início e término dos turnos escolares nessa instituição. Ainda, esse conjunto de linhas foi considerado apenas na determinação dos tempos de deslocamento por ônibus com destino em equipamentos educacionais que ofertam ensino médio e ensino superior. Para as demais funções, consideraram-se apenas as duas linhas circulares. 
+
+
+Para cômputo da velocidade média por ônibus, foi identificada a velocidade média da linha Vila Regina – Jardim Paulista considerando a extensão do itinerário – 28 km – e o ciclo das viagens de uma hora e dez minutos (1:10’). Assim, assumiu-se a velocidade média dessa linha – 24 km/h – como padrão para todo o sistema. 
+
+O tempo de atraso nas linhas circulares foi calculado considerando o número de pontos de embarque e desembarque (PED) de cada linha e um tempo de atraso equivalente ao ciclo. Para alocação desse tempo na rede, cada link com presença de PED recebeu a alocação do da razão entre o ciclo (1:10’) e o número de aproximações em cada PED. Assim, para a linha Vila Regina – Jardim Paulista, foram alocados 0,52 minutos por link considerando 134 links com PEDs. Para a linha Vila Regina – Hospital Regional, foram considerados 124 links com PEDs e 0,56 minutos por link. 
+
+No caso de ocorrência de mais de um PED no mesmo link, esse tempo de espera foi dividido por 2, pois há defasagem no quadro horário das duas linhas circulares. O resultado desse tempo de espera foi então dividido por 2 caso houvesse mais de uma linha circular com itinerário no mesmo link. Esse procedimento visou incluir a frequência de viagens como um atributo que reduz a impedância quando for mais significativo. 
+
 
 ---
 
@@ -380,6 +408,10 @@ ft4
 
 .large[
 **Inexistência de dados acessíveis de tempos nos links para transporte individual por automóvel.**
+]
+
+.bigger[
+Para o **transporte individual motorizado**, considerou-se apenas o tempo de deslocamento na **velocidade-padrão de 40 km/h.**  
 ]
 
 ---
@@ -409,7 +441,7 @@ ft4
 Mensuração (1/3)
 ]]
 
-.big[
+.bigger[
 **Quais os indicadores** mais adequados para **mensuração da acessibilidade** a **cidades de menor porte**? É válido utilizar **diferentes indicadores** conforme a **ordem da função**? É necessário considerar uma **função de decaimento da impedância** para cidades de menor porte?
 ]
 
