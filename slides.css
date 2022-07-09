@@ -407,12 +407,12 @@ a, a > code {
 
 /* Footnote */
 .footnote {
-  padding-left: 10px;
+  padding-left: 8px;
   color: #88398A;
   position: absolute;
   bottom: 60px;
-  padding-right: 3em;
-  font-size: 1.5em;
+  padding-right: 2em;
+  font-size: 1em;
   font-weight: bold;
   border-top: 3px solid #2c8475;
 }
@@ -424,12 +424,12 @@ div.my-footer {
     position: absolute;
     bottom: 0px;
     height: 40px;
-    width: 90%;
+    width: 100%;
     font-family: 'Nunito', sans;
 }
 
 div.my-footer span {
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     bottom: 10px;
     left: 10px;
