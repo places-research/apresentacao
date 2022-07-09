@@ -182,26 +182,27 @@ h3 {
 .remark-slide-content {
   background-color: var(--background-color);
   font-size: 1rem;
-  padding: 5px 64px 5px 64px;
+  margin: 0px 0px 0px 0px;
   width: 100%;
   height: 100%;
+  padding: 0.1em 3em 0.1em 3em;
 }
 
 .remark-slide-content h1 {
   font-size: var(--header-h1-font-size);
-  margin-top: 0.3em;
+  margin-top: 0.2em;
   margin-bottom: 0em;
 }
 .remark-slide-content h2 {
   font-size: var(--header-h2-font-size);
-  margin-top: 0.3em;
+  margin-top: 0.2em;
   margin-bottom: 0em;
 
 }
 .remark-slide-content h3 {
   font-size: var(--header-h3-font-size);
   line-height: 1em;
-  margin-top: 0.5em;
+  margin-top: 0.2em;
   margin-bottom: 0em;
 
 
@@ -221,11 +222,14 @@ h3 {
   opacity: 1;
   font-size: 0.9em;
 }
+
 strong { color: var(--text-bold-color); }
 a, a > code {
   color: var(--link-color);
   text-decoration: none;
   margin-bottom: 0em;
+  padding-bottom: 0em;
+
 }
 
 .remark-code-line-highlighted {
@@ -276,10 +280,14 @@ a, a > code {
          margin-top: 0em;
          margin-bottom: 0em;
 }
-.bigger { font-size: 150%;
-         margin-top: 0em;}
-.big { font-size: 115%;
+.bigger { font-size: 130%;
+         margin-top: 0em;
+         margin-bottom: 0em;
+}
+         
+.big { font-size: 150%;
        margin-top: 0em;}
+       
 .midi { font-size: 85% }
 .small { font-size: 70% }
 .xsmall { font-size: 65% }
@@ -296,17 +304,28 @@ a, a > code {
   font-size: 100%;
 }
 
+.flextable-shadow-host{
+  font-family: 'Oswald', Sans-Serif;
+  color: var(--header-color);
+  margin-bottom: 0em;
+  margin-top: 0em;
+}
+
 /*Alternative two-column layouts*/
 .column {
   float: left;
 }
 
 .left {
-  width: 50%;
+  width: 50%;  
+  margin-bottom: 0em;
+
 }
 
 .right {
   width: 50%;
+  margin-bottom: 0em;
+
 }
 
 .right ~ * {
@@ -319,11 +338,20 @@ a, a > code {
   width: 50%;
   float: left;
   margin-top: 0em;
+  padding-top: 0px;
+  margin-bottom: 0em;
+
 }
 
 .pull-right {
   width: 50%;
   float: right;
+  padding-top: 0px;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+
 }
 
 .pull-right ~ * {
@@ -474,18 +502,42 @@ img, video, iframe {
   border: 1px solid #ddd;
 }
 
-/* Logo */
-.remark-slide-content:after {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    right: 1100px;
-    height: 60px;
-    width: 81px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("img/Image2.png");
+/* Table */
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:0.5;
+  margin-left:0.05em;
+  margin-right:0.05em;
+  border-width: 0;
+  display: table;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border-color: transparent;
 }
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+
+
 
 /* Media */
 @page { margin: 0; }
@@ -506,8 +558,8 @@ div.datatables {
 
 .remark-slide table {
   margin: auto;
-  border-top: 1px solid #8A8A8A;
-  border-bottom: 1px solid #8A8A8A;
+  border-top: 0px solid #8A8A8A;
+  border-bottom: 0px solid #8A8A8A;
 }
 
 .remark-slide table thead th {
@@ -515,7 +567,7 @@ div.datatables {
 }
 
 th, td {
-  padding: 1px;
+  padding: 0px;
 }
 
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
