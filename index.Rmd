@@ -304,7 +304,6 @@ library(tidyverse)
 library(ftExtra)
 library(flextable)
 
-
 #imped_active$Velocidade padrão (km/h)  <- as.factor(funcoes$Velocidade padrão (km/h))
 
 names(imped_active) <- c("Modo", "Velocidade (km/h)", "Inclinação", "Fator de impedância", "a", "b") 
@@ -361,6 +360,11 @@ ft4 <- set_table_properties(ft4, layout = "autofit", width = 1)
 ft4
 
 ```
+
+.footnote[
+** Fator de impedância: Pritchard et al. (2019)
+
+]
 ]
 
 
