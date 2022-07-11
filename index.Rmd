@@ -186,7 +186,6 @@ conhecer o carregamento da rede em alguns casos pode fornecer informações obse
 - Salário médio mensal dos trabalhadores formais: 1,8 salários mínimos (2020)
 - População ocupada: 20,8% (2020)
 - Percentual das receitas oriundas de fontes externas: 75,5 %  (2015)
-- Urbanização de vias públicas: 3,4 %  (2010)
 ]
 
 .footnote[
@@ -367,6 +366,11 @@ ft4
 ]
 ]
 
+???
+
+Considerando a velocidade e os ciclos semafóricos, alocou-se 1 minuto de atraso em cada interseção. Para tanto, foi alocada metade do tempo para cada link de aproximação de via local com via de hierarquia superior. 
+
+Quando o trecho foi considerado crítico, a velocidade de circulação para ciclistas foi de 3,5 km/h
 
 ---
 
